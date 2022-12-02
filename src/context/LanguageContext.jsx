@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
-import api from '../api/language';
+import api from '../api/translations';
 export const LanguageContext = createContext();
 const LanguageUpdateContext = createContext();
 
@@ -13,14 +13,13 @@ export const useLanguageUpdate = () => {
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('english');
-  const [data, setData] = useState({});
+  const [data, setData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await api.get(`/${language}`);
         setData(response.data);
-        console.log(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -28,8 +27,8 @@ export const LanguageProvider = ({ children }) => {
     fetchData();
   }, [language]);
 
-  const toggleLanguage = () => {
-    setLanguage((language) => (language === 'english' ? 'arabic' : 'english'));
+  const toggleLanguage = (e) => {
+    setLanguage(() => e);
   };
 
   return (
