@@ -1,8 +1,62 @@
 {
   "english": {
-    "hello": "hello"
+    "navbar": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      },
+      {
+        "title": "Blog",
+        "url": "/blog"
+      },
+      {
+        "title": "Contact",
+        "url": "/contact"
+      }
+    ],
+    "languages": [
+      { "value": "english", "label": "English" },
+      { "value": "arabic", "label": "Arabic" }
+    ],
+    "hero": {
+      "title1": "The First Platform",
+      "title2": "In Algeria for Nurseries",
+      "location": "location",
+      "adress": "city bab ezzoar cub 1, 16000, Algies"
+    }
   },
   "arabic": {
-    "hello": "مرحبا"
+    "navbar": [
+      {
+        "title": "الصفحة الرئيسية",
+        "url": "/"
+      },
+      {
+        "title": "حول",
+        "url": "/about"
+      },
+      {
+        "title": "المدونة",
+        "url": "/blog"
+      },
+      {
+        "title": "اتصل بنا",
+        "url": "/contact"
+      }
+    ],
+    "languages": [
+      { "value": "english", "label": "الإنجليزية" },
+      { "value": "arabic", "label": "العربية" }
+    ],
+    "hero": {
+      "title1": "المنصة الأولى",
+      "title2": "في الجزائر للروضات",
+      "location": "الموقع",
+      "adress": "مدينة باب الزوار كوب 1، 16000، الجزائر"
+    }
   }
 }
