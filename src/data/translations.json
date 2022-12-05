@@ -6,8 +6,16 @@
         "url": "/"
       },
       {
-        "title": "About",
+        "title": "About Us",
         "url": "/about"
+      },
+      {
+        "title": "Our Projects",
+        "url": "/projects"
+      },
+      {
+        "title": "Store",
+        "url": "/store"
       },
       {
         "title": "Blog",
@@ -27,6 +35,80 @@
       "title2": "In Algeria for Nurseries",
       "location": "location",
       "adress": "city bab ezzoar cub 1, 16000, Algies"
+    },
+    "announcements": {
+      "title": "Announcements",
+      "slides": [
+        {
+          "id": 1,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Announcement",
+          "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        }
+      ]
+    },
+    "nurseries": {
+      "span": "Nurseries",
+      "title": "Learn For everyone !",
+      "text": "In today’s world most children would rather play video games than do physical activities. Our mission is to show you the best Nurseries across All the Algerian land and provide a grood platform for children to enjoy themselves while they gain a love for physical play. This is taught to them without you so Don't hesitate to join us.",
+      "button": {
+        "title": "Discover More",
+        "url": "nurseries"
+      }
+    },
+    "jobs": {
+      "span": "jobs",
+      "title": "as Well you can find a job here !",
+      "text": "In today’s world most children would rather play video games than do physical activities. Our mission is to show you the best Nurseries across All the Algerian land and provide a grood platform for children to enjoy themselves while they gain a love for physical play. This is taught to them without you so Don't hesitate to join us.",
+      "button": {
+        "title": "Discover More",
+        "url": "jobs"
+      }
+    },
+    "store": {
+      "span": "Store",
+      "title": "as Well you can shop and by some cool stuff here !",
+      "text": "In today’s world most children would rather play video games than do physical activities. Our mission is to show you the best Nurseries across All the Algerian land and provide a grood platform for children to enjoy themselves while they gain a love for physical play. This is taught to them without you so Don't hesitate to join us.",
+      "button": {
+        "title": "Discover More",
+        "url": "store"
+      }
     }
   },
   "arabic": {
@@ -40,7 +122,15 @@
         "url": "/about"
       },
       {
-        "title": "المدونة",
+        "title": "أعمالنا",
+        "url": "/projects"
+      },
+      {
+        "title": "متجر",
+        "url": "/store"
+      },
+      {
+        "title": "المساهمات",
         "url": "/blog"
       },
       {
@@ -57,6 +147,80 @@
       "title2": "في الجزائر للروضات",
       "location": "الموقع",
       "adress": "مدينة باب الزوار كوب 1، 16000، الجزائر"
+    },
+    "announcements": {
+      "title": "الإعلانات",
+      "slides": [
+        {
+          "id": 1,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 2,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 3,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 5,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 6,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        },
+        {
+          "id": 7,
+          "title": "إعلان",
+          "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+        }
+      ]
+    },
+    "nurseries": {
+      "span": "روضات الاطفال",
+      "title": "التعليم حق كل طفل ",
+      "text:": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+      "button": {
+        "title": "اكتشف المزيد",
+        "url": "nurseries"
+      }
+    },
+    "jobs": {
+      "span": "الوظائف",
+      "title": "كذلك يمكنك العثور على وظيفة هنا",
+      "text:": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+      "button": {
+        "title": "اكتشف المزيد",
+        "url": "jobs"
+      }
+    },
+    "store": {
+      "span": "المتجر",
+      "title": "كذلك يمكنك اقتناء العديد من الاشياء الجميلة هنا",
+      "text:": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+      "button": {
+        "title": "اكتشف المزيد",
+        "url": "store"
+      }
     }
   }
 }
