@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
+* {
+  @apply m-0 p-0 box-border scroll-smooth;
+}
 .app {
-  @apply w-full h-[2048px] bg-[url('./assets/img/header_bg.jpg')] bg-cover bg-right-bottom;
+  @apply w-full bg-[url('./assets/img/header_bg.jpg')] bg-cover bg-right-bottom h-full;
 }
 .animation {
   @apply hover:-translate-y-0.5 hover:transition-all hover:shadow-lg;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  @apply text-[#282828];
 }
 .app-header {
   @apply w-[full];
@@ -27,10 +40,10 @@
 }
 
 .hero {
-  @apply flex gap-4 items-start;
+  @apply flex lg:gap-4 mb-14 lg:items-start lg:flex-row flex-col;
 }
 .left_hero {
-  @apply w-3/4 text-6xl pt-28 leading-snug font-medium font-paytoneOne;
+  @apply lg:w-3/4 w-full text-6xl lg:pt-28 py-20 leading-snug font-medium font-paytoneOne;
 }
 .left_hero span {
   @apply text-[#37AC94];
@@ -39,8 +52,24 @@
   @apply text-base font-normal font-poppins leading-8;
 }
 @tailwind utilities;
-.hero_location::before {
-  content: '';
-  height: 100%;
-  width: 2px;
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .swiper-container {
+    width: 1024px;
+  }
 }
