@@ -7,7 +7,6 @@ import location2 from '../../assets/img/location2.png';
 
 const Hero = () => {
   const { language, data } = useLanguage();
-  console.log(data?.hero);
   return (
     <div className={`hero ${language === 'english' ? 'pl-10' : 'pr-10'}`}>
       <div className='left_hero'>

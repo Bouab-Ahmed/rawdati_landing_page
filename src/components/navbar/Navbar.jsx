@@ -50,8 +50,8 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar className='navbar_container'>
-      <div className='container mx-auto flex items-center justify-between'>
+    <Navbar className='mx-0 navbar_container'>
+      <div className='container mx-auto flex items-center justify-between '>
         <div className='logo_container'>
           <img
             src={logo}
@@ -124,7 +124,7 @@ const NavBar = () => {
       <MobileNav open={openNav}>
         <NavItems items={data?.navbar} />
         <Select
-          className='w-3/4 my-4 mx-auto sm:basic-single'
+          className='w-[50%] my-4 mx-auto sm:basic-single'
           classNamePrefix='select'
           value={selectedValue}
           onChange={handleLanguageChange}
@@ -138,7 +138,7 @@ const NavBar = () => {
           variant='gradient'
           size='sm'
           fullWidth
-          className='mb-2 flex mx-auto gap-2 items-center bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white'>
+          className='mb-2 flex mx-auto gap-2 items-center bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white w-[40%]'>
           <BsTelephone /> | <span>+123 786 192 934</span>
         </Button>
       </MobileNav>
