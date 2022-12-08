@@ -11,6 +11,10 @@ import nurseries_ar from '../assets/img/header_right_flipped.webp';
 import store_en from '../assets/img/store_en.webp';
 import store_ar from '../assets/img/store_ar.webp';
 
+// consultaion imgs
+import consultation_en from '../assets/img/consultation_en.webp';
+import consultation_ar from '../assets/img/consultation_ar.png';
+
 export const images = {
   jobs: {
     en: jobs_en,
@@ -23,5 +27,9 @@ export const images = {
   store: {
     en: store_en,
     ar: store_ar,
+  },
+  consultation: {
+    en: consultation_en,
+    ar: consultation_ar,
   },
 };

@@ -31,6 +31,7 @@ const App = () => {
         <Section data={data?.jobs} sectionTitle='jobs' />
         {/* store */}
         <Section data={data?.store} imgFirst={true} sectionTitle='store' />
+        <Section data={data?.consultation} sectionTitle='consultation' />
       </main>
     </div>
   );

@@ -109,6 +109,15 @@
         "title": "Discover More",
         "url": "store"
       }
+    },
+    "consultation": {
+      "span": "FAQ",
+      "title": "Consultations",
+      "text": "In today’s world most children would rather play video games than do physical activities. Our mission is to show you the best Nurseries across All the Algerian land and provide a grood platform for children to enjoy themselves while they gain a love for physical play. This is taught to them without you so Don't hesitate to join us.",
+      "button": {
+        "title": "Discover More",
+        "url": "faq"
+      }
     }
   },
   "arabic": {
@@ -220,6 +229,15 @@
       "button": {
         "title": "اكتشف المزيد",
         "url": "store"
+      }
+    },
+    "consultation": {
+      "span": "التعليمات",
+      "title": "الأسئلة الشائعة",
+      "text:": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
+      "button": {
+        "title": "اكتشف المزيد",
+        "url": "faq"
       }
     }
   }

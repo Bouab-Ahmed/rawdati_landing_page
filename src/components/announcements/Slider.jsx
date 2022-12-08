@@ -38,8 +38,9 @@ const Announcements = () => {
           spaceBetween: 10,
         },
       }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}>
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
+    >
       {data?.announcements?.slides
         ? data?.announcements?.slides.map((item, i) => {
             return (
