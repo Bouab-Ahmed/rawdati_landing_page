@@ -4,33 +4,34 @@ import { useLanguage } from './context/LanguageContext';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Announcements from './components/announcements/Announcements';
-import Nursersies from './components/nurseries/Nursersies';
-import Jobs from './components/jobs/Jobs';
-import Store from './components/store/Store';
+import Section from './components/section/Section';
 
 const App = () => {
-  const { language } = useLanguage();
+  const { language, data } = useLanguage();
 
   return (
     <div className='app' dir={language === 'arabic' ? 'rtl' : 'ltr'}>
-      <div className='app-header'>
+      <nav className='app-header'>
         <Navbar />
-      </div>
+      </nav>
       <header>
         <Hero />
       </header>
-      <section>
-        <Announcements />
-      </section>
-      <section>
-        <Nursersies />
-      </section>
-      <section>
-        <Jobs />
-      </section>
-      <section>
-        <Store />
-      </section>
+      <main>
+        <section>
+          <Announcements />
+        </section>
+        {/* nurseries */}
+        <Section
+          data={data?.nurseries}
+          imgFirst={true}
+          sectionTitle='nurseries'
+        />
+        {/* jobs */}
+        <Section data={data?.jobs} sectionTitle='jobs' />
+        {/* store */}
+        <Section data={data?.store} imgFirst={true} sectionTitle='store' />
+      </main>
     </div>
   );
 };
