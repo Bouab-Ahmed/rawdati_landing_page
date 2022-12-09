@@ -10,8 +10,7 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper';
 
 const Announcements = () => {
-  const { language, data } = useLanguage();
-  console.log(data?.announcements?.slides);
+  const { data } = useLanguage();
   return (
     <Swiper
       navigation={true}
@@ -20,8 +19,9 @@ const Announcements = () => {
       slidesPerView={3}
       className='mySwiper'
       autoplay={{
-        delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
+        delay: 2000,
+        pauseOnMouseEnter: true,
       }}
       dir='ltr'
       breakpoints={{
