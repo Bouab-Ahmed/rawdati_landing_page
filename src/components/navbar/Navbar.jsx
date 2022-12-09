@@ -10,6 +10,7 @@ import logo from '../../assets/img/logos/rawdati_logo.png';
 import NavItems from './NavItems';
 import { useLanguage, useLanguageUpdate } from '../../context/LanguageContext';
 import { BsTelephone } from 'react-icons/bs';
+import Model from '../model/Model';
 
 const customStyles = {
   option: (styles, state) => ({
@@ -33,9 +34,7 @@ const customStyles = {
 
 const NavBar = () => {
   const { language, data } = useLanguage();
-  const toggleLanguage = useLanguageUpdate();
   const [openNav, setOpenNav] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(data?.languages[0]);
 
   useEffect(() => {
     window.addEventListener(
@@ -44,13 +43,8 @@ const NavBar = () => {
     );
   }, []);
 
-  const handleLanguageChange = (e) => {
-    setSelectedValue(() => e.value);
-    toggleLanguage(e.value);
-  };
-
   return (
-    <Navbar className='mx-0 navbar_container'>
+    <Navbar className='mx-0 navbar_container min-w-full top-0 left-0 fixed z-50 bg-[#FAF5F2] rounded-none'>
       <div className='container mx-auto flex items-center justify-between '>
         <div className='logo_container'>
           <img
@@ -66,7 +60,7 @@ const NavBar = () => {
           </div>
 
           <div className='hidden lg:flex lg:gap-8'>
-            <Select
+            {/* <Select
               className='w-[130px] mx-auto sm:basic-single'
               classNamePrefix='select'
               defaultValue={() => selectedValue}
@@ -76,11 +70,9 @@ const NavBar = () => {
               name='language'
               options={data?.languages}
               styles={customStyles}
-            />
-            <Button
-              variant='gradient'
-              size='sm'
-              className='bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white lg:flex lg:items-center lg:gap-2 animation'>
+            /> */}
+            <Model />
+            <Button className='bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white lg:flex lg:items-center lg:gap-2 shadow-none'>
               <BsTelephone /> | <span>+123 786 192 934</span>
             </Button>
           </div>
@@ -123,7 +115,7 @@ const NavBar = () => {
       </div>
       <MobileNav open={openNav}>
         <NavItems items={data?.navbar} />
-        <Select
+        {/* <Select
           className='w-[50%] my-4 mx-auto sm:basic-single'
           classNamePrefix='select'
           value={selectedValue}
@@ -133,7 +125,8 @@ const NavBar = () => {
           name='language'
           options={data?.languages}
           styles={customStyles}
-        />
+        /> */}
+        <Model />
         <Button
           variant='gradient'
           size='sm'
@@ -142,6 +135,7 @@ const NavBar = () => {
           <BsTelephone /> | <span>+123 786 192 934</span>
         </Button>
       </MobileNav>
+      {/* <Model open={open} handleOpen={handleOpen} /> */}
     </Navbar>
   );
 };
