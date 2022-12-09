@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Announcements from './components/announcements/Announcements';
 import Section from './components/section/Section';
+import Login from './components/login/Login';
 
 const App = () => {
   const { language, data } = useLanguage();
@@ -32,6 +33,7 @@ const App = () => {
         {/* store */}
         <Section data={data?.store} imgFirst={true} sectionTitle='store' />
         <Section data={data?.consultation} sectionTitle='consultation' />
+        <Login data={data?.login} />
       </main>
     </div>
   );
