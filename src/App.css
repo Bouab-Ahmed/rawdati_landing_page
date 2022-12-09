@@ -30,8 +30,9 @@ a {
   @apply mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6;
 }
 .logo_container {
-  @apply w-[100px] my-0;
+  @apply w-[80px] my-0 !bg-opacity-0;
 }
+
 .nav_items {
   @apply flex justify-between items-center gap-10 text-gray-900;
 }
@@ -40,7 +41,7 @@ a {
 }
 
 .hero {
-  @apply flex lg:gap-4 mb-14 lg:items-start lg:flex-row flex-col;
+  @apply flex lg:gap-4 my-14 lg:items-start lg:flex-row flex-col;
 }
 .left_hero {
   @apply lg:w-3/4 w-full text-6xl lg:pt-28 py-20 leading-snug font-medium font-paytoneOne;
