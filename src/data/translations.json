@@ -26,10 +26,21 @@
         "url": "/contact"
       }
     ],
-    "languages": [
-      { "value": "english", "label": "English" },
-      { "value": "arabic", "label": "Arabic" }
-    ],
+    "tr": {
+      "title": "choose your Language",
+      "languages": [
+        {
+          "title": "English",
+          "label": "english"
+        },
+        {
+          "title": "Arabic",
+          "label": "arabic"
+        }
+      ],
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
     "hero": {
       "title1": "The First Platform",
       "title2": "In Algeria for Nurseries",
@@ -43,43 +54,50 @@
           "id": 1,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 2,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 3,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 4,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 5,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 6,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         },
         {
           "id": 7,
           "title": "Announcement",
           "text": "We are happy to announce that we are now open for business. We are happy to announce that we are now open for business. We are happy to announce that we are now open for business.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "Learn More"
         }
       ]
     },
@@ -118,6 +136,41 @@
         "title": "Discover More",
         "url": "faq"
       }
+    },
+    "login": {
+      "header": "Join Our Comunity",
+      "text1": "Deep cleaning and disinfecting between each play session is yet another",
+      "text2": "measure we added to ensure your safety while visiting.",
+      "button": {
+        "title": "Join us Now !",
+        "url": "login"
+      }
+    },
+    "footer": {
+      "links": {
+        "facebook": "https/facebook.com",
+        "twitter": "https/twitter.com",
+        "instagram": "https/instagram.com"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "text": "Subscribe to our newsletter and get 10% off your first purchase",
+        "button": "Subscribe"
+      },
+      "text1": "*Please note that our weekend opening hours can be affected by",
+      "text2": " scheduled Private Events.",
+      "hours": {
+        "title": "Opening Hours",
+        "text1": "Monday - Friday: 9:00 - 17:00",
+        "text2": "Saturday: 9:00 - 17:00",
+        "text3": "Sunday: 9:00 - 17:00"
+      },
+      "contact": {
+        "title": "Contact Details",
+        "adress": "7110 3rd Ave, Brooklyn, New York",
+        "phone": "Phone: +213 555 555 555",
+        "email": "email@rawdati.dz"
+      }
     }
   },
   "arabic": {
@@ -147,10 +200,21 @@
         "url": "/contact"
       }
     ],
-    "languages": [
-      { "value": "english", "label": "الإنجليزية" },
-      { "value": "arabic", "label": "العربية" }
-    ],
+    "tr": {
+      "title": "اختر اللغة",
+      "languages": [
+        {
+          "title": "العربية",
+          "label": "arabic"
+        },
+        {
+          "title": "الانجليزية",
+          "label": "english"
+        }
+      ],
+      "cancel": "إلغاء",
+      "confirm": "تأكيد"
+    },
     "hero": {
       "title1": "المنصة الأولى",
       "title2": "في الجزائر للروضات",
@@ -164,43 +228,50 @@
           "id": 1,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 2,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 3,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 4,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 5,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 6,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         },
         {
           "id": 7,
           "title": "إعلان",
           "text": "يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل. يسعدنا أن نعلن أننا الآن مفتوحون للعمل.",
-          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg"
+          "img": "https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/07/hero_image_03.jpg",
+          "button": "اِقرأ المزيد"
         }
       ]
     },
@@ -238,6 +309,40 @@
       "button": {
         "title": "اكتشف المزيد",
         "url": "faq"
+      }
+    },
+    "login": {
+      "header": "انضم إلى مجتمعنا",
+      "text": "لمزيد من التفاصيل والمفاجآت، يسعدنا الانضمام إلينا كعضو",
+      "button": {
+        "title": "انضم إلينا الآن!",
+        "url": "login"
+      }
+    },
+    "footer": {
+      "links": {
+        "facebook": "https/facebook.com",
+        "twitter": "https/twitter.com",
+        "instagram": "https/instagram.com"
+      },
+      "newsletter": {
+        "title": "النشرة الإخبارية",
+        "text": "اشترك في النشرة الإخبارية لدينا واحصل على خصم 10٪ على أول عملية شراء",
+        "button": "الإشتراك"
+      },
+      "text1": "يرجى ملاحظة أن ساعات عمل عطلة نهاية الأسبوع لدينا يمكن أن تتأثر ب*",
+      "text2": " الأحداث الخاصة المجدولة.",
+      "hours": {
+        "title": "ساعات العمل",
+        "text1": "الاثنين - الجمعة: 9:00 - 17:00",
+        "text2": "السبت: 9:00 - 17:00",
+        "text3": "الأحد: 9:00 - 17:00"
+      },
+      "contact": {
+        "title": "معلومات الاتصال",
+        "adress": "7110 3rd Ave ، بروكلين ، نيويورك",
+        "phone": "+213 555 555 555",
+        "email": "email@rawdati.dz"
       }
     }
   }
