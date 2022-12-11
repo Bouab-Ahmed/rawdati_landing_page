@@ -35,7 +35,7 @@ const App = () => {
         <Section data={data?.store} imgFirst={true} sectionTitle='store' />
         <Section data={data?.consultation} sectionTitle='consultation' />
         <Login data={data?.login} />
-        <Footer data={data?.footer} />
+        <Footer data={data?.footer} language={language} />
       </main>
     </div>
   );

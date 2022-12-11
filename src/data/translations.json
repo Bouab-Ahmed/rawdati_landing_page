@@ -159,17 +159,38 @@
       },
       "text1": "*Please note that our weekend opening hours can be affected by",
       "text2": " scheduled Private Events.",
-      "hours": {
-        "title": "Opening Hours",
-        "text1": "Monday - Friday: 9:00 - 17:00",
-        "text2": "Saturday: 9:00 - 17:00",
-        "text3": "Sunday: 9:00 - 17:00"
-      },
       "contact": {
         "title": "Contact Details",
-        "adress": "7110 3rd Ave, Brooklyn, New York",
-        "phone": "Phone: +213 555 555 555",
-        "email": "email@rawdati.dz"
+        "details": [
+          "7110 3rd Ave, Brooklyn, New York",
+          "Phone: +213 555 555 555",
+          "email@rawdati.dz"
+        ]
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "details": [
+          {
+            "title": "Our Team",
+            "url": "/team"
+          },
+          {
+            "title": "Privacy",
+            "url": "/privacy"
+          },
+          {
+            "title": "Terms",
+            "url": "/terms"
+          },
+          {
+            "title": "FAQ",
+            "url": "/faq"
+          },
+          {
+            "title": "About Our Company",
+            "url": "/about"
+          }
+        ]
       }
     }
   },
@@ -332,17 +353,38 @@
       },
       "text1": "يرجى ملاحظة أن ساعات عمل عطلة نهاية الأسبوع لدينا يمكن أن تتأثر ب*",
       "text2": " الأحداث الخاصة المجدولة.",
-      "hours": {
-        "title": "ساعات العمل",
-        "text1": "الاثنين - الجمعة: 9:00 - 17:00",
-        "text2": "السبت: 9:00 - 17:00",
-        "text3": "الأحد: 9:00 - 17:00"
-      },
       "contact": {
         "title": "معلومات الاتصال",
-        "adress": "7110 3rd Ave ، بروكلين ، نيويورك",
-        "phone": "+213 555 555 555",
-        "email": "email@rawdati.dz"
+        "details": [
+          "7110 3rd Ave ، بروكلين ، نيويورك",
+          "+213 555 555 555",
+          "email@rawdati.dz"
+        ]
+      },
+      "quickLinks": {
+        "title": "روابط سريعة",
+        "details": [
+          {
+            "title": "فريق العمل",
+            "url": "/team"
+          },
+          {
+            "title": "الخصوصية",
+            "url": "/privacy"
+          },
+          {
+            "title": "الشروط والأحكام",
+            "url": "/terms"
+          },
+          {
+            "title": "الأسئلة الشائعة",
+            "url": "/faq"
+          },
+          {
+            "title": "من نحن",
+            "url": "/about"
+          }
+        ]
       }
     }
   }

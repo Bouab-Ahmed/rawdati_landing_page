@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../assets/img/logos/rawdati_logo.png';
 import footerImg from '../../assets/img/bottom_white_wave_01.png';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-const Footer = ({ data }) => {
+const Footer = ({ data, language }) => {
   return (
     <>
       <footer className='bg-[#FAF5F2] pt-14 py-4'>
@@ -40,84 +40,62 @@ const Footer = ({ data }) => {
                 </ul>
               </div>
               <p className='mt-2 text-base text-gray-500 w-full'>
-                *Please note that our weekend opening hours can be affected by
-                scheduled Private Events.
+                {data?.newsletter?.text}
               </p>
             </div>
             <div className='w-full md:w-6/12 px-4'>
               <div className='w-full md:w-11/12'>
-                <h3 className='text-sm px-2 text-[#37AC94]'>newsletter</h3>
+                <h3 className='text-sm px-2 text-[#37AC94]'>
+                  {data?.newsletter?.title}
+                </h3>
                 <input
                   type='text'
-                  className='w-9/12 h-10 mt-2 mb-4 focus:outline-none border-2 rounded-full rounded-tr-none rounded-br-none px-4'
+                  className={`w-9/12 h-10 mt-2 mb-4 focus:outline-none border-2 rounded-full ${
+                    language === 'english'
+                      ? 'rounded-tr-none rounded-br-none'
+                      : 'rounded-tl-none rounded-bl-none'
+                  } px-4`}
                 />
-                <button className='w-3/12 h-10 -ml-4 my-2 bg-[#37AC94] rounded-full rounded-tr-none text-white'>
-                  subscribe
+                <button
+                  className={`w-3/12 h-10 my-2 bg-[#37AC94] rounded-full ${
+                    language === 'english'
+                      ? 'rounded-tr-none -ml-4'
+                      : 'rounded-tl-none -mr-4'
+                  } text-white`}>
+                  {data?.newsletter?.button}
                 </button>
               </div>
               <div className='flex flex-wrap items-top mb-6 gap-4'>
                 <div className='w-full md:w-4/12 px-4'>
                   <span className='block uppercase text-[#37AC94] text-sm font-semibold mb-2'>
-                    QUICK LINKS
+                    {data?.quickLinks?.title}
                   </span>
+                  {/* quickLinks */}
                   <ul className='list-unstyled'>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        Our Team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        Privacy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        Terms
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        About Our Company
-                      </a>
-                    </li>
+                    {data?.quickLinks?.details?.map((link, index) => (
+                      <li key={index}>
+                        <a
+                          className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
+                          href={link.url}>
+                          {link.title}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className='w-full md:w-6/12 px-4'>
                   <span className='block uppercase text-[#37AC94] text-sm font-semibold mb-2'>
-                    Contact Details
+                    {data?.contact?.title}
                   </span>
                   <ul className='list-unstyled'>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        7110 3rd Ave, Brooklyn, New York
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        +2342 5446 67
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='#pablo'>
-                        bambino@boldthemes.com
-                      </a>
-                    </li>
+                    {data?.contact?.details?.map((link, index) => (
+                      <li key={index}>
+                        <a className='text-gray-500 hover:text-gray-900 font-semibold block pb-2 text-sm'>
+                          {link}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
