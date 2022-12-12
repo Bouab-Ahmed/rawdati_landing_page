@@ -28,7 +28,7 @@
     ],
     "tr": {
       "title": "choose your Language",
-      "languages": [
+      "items": [
         {
           "title": "English",
           "label": "english"
@@ -37,9 +37,32 @@
           "title": "Arabic",
           "label": "arabic"
         }
-      ],
-      "cancel": "Cancel",
-      "confirm": "Confirm"
+      ]
+    },
+    "users": {
+      "title": "are you a:",
+      "items": [
+        {
+          "title": "Certified Kindergarten",
+          "label": "/establishment"
+        },
+        {
+          "title": "Academy",
+          "label": "/establishment"
+        },
+        {
+          "title": "Kids club",
+          "label": "/establishment"
+        },
+        {
+          "title": "Vendor",
+          "label": "/vendor"
+        },
+        {
+          "title": "user",
+          "label": "/user"
+        }
+      ]
     },
     "hero": {
       "title1": "The First Platform",
@@ -223,7 +246,7 @@
     ],
     "tr": {
       "title": "اختر اللغة",
-      "languages": [
+      "items": [
         {
           "title": "العربية",
           "label": "arabic"
@@ -232,9 +255,32 @@
           "title": "الانجليزية",
           "label": "english"
         }
-      ],
-      "cancel": "إلغاء",
-      "confirm": "تأكيد"
+      ]
+    },
+    "users": {
+      "title": "هل انت",
+      "items": [
+        {
+          "title": "صاحب روضة معتمدة",
+          "label": "/establishment"
+        },
+        {
+          "title": "صاحب أكاديمية",
+          "label": "/establishment"
+        },
+        {
+          "title": "صاحب نادي أطفال",
+          "label": "/establishment"
+        },
+        {
+          "title": "بائع",
+          "label": "/vendor"
+        },
+        {
+          "title": "مستخدم",
+          "label": "/user"
+        }
+      ]
     },
     "hero": {
       "title1": "المنصة الأولى",
