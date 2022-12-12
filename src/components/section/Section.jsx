@@ -2,11 +2,9 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { images } from '../../shared/images';
 import { useNavigate } from 'react-router-dom';
-import FormDetails from '../form/FormDetails';
 const Section = ({ data, imgFirst = false, sectionTitle }) => {
   const navigate = useNavigate();
   const { language } = useLanguage();
-  console.log(sectionTitle);
   return (
     <section>
       <div className='my-10 flex flex-col justify-between md:flex-row lg:flex-row gap-10 lg:items-start'>
