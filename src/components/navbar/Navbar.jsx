@@ -5,12 +5,12 @@ import {
   Button,
   IconButton,
 } from '@material-tailwind/react';
-import Select from 'react-select';
 import logo from '../../assets/img/logos/rawdati_logo.png';
 import NavItems from './NavItems';
 import { useLanguage, useLanguageUpdate } from '../../context/LanguageContext';
 import { BsTelephone } from 'react-icons/bs';
 import Model from '../model/Model';
+import { SiGoogletranslate } from 'react-icons/si';
 
 const customStyles = {
   option: (styles, state) => ({
@@ -33,8 +33,18 @@ const customStyles = {
 };
 
 const NavBar = () => {
+  const toggleLanguage = useLanguageUpdate();
+
+  const [open, setOpen] = useState(false);
   const { language, data } = useLanguage();
   const [openNav, setOpenNav] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
+
+  const handleLanguageChange = (e) => {
+    toggleLanguage(e);
+    handleOpen();
+  };
 
   useEffect(() => {
     window.addEventListener(
@@ -60,18 +70,21 @@ const NavBar = () => {
           </div>
 
           <div className='hidden lg:flex lg:gap-8'>
-            {/* <Select
-              className='w-[130px] mx-auto sm:basic-single'
-              classNamePrefix='select'
-              defaultValue={() => selectedValue}
-              onChange={handleLanguageChange}
-              isRtl={language === 'arabic' ? true : false}
-              isSearchable={true}
-              name='language'
-              options={data?.languages}
-              styles={customStyles}
-            /> */}
-            <Model />
+            <>
+              <Button
+                onClick={handleOpen}
+                variant='text'
+                className='flex gap-2 items-center justify-center bg-transparent text-black border-collapse hover:bg-[#37AC94] hover:bg-opacity-20'>
+                {language === 'english' ? 'En' : 'Ar'} | <SiGoogletranslate />
+              </Button>
+              <Model
+                data={data?.tr}
+                handleLanguageChange={handleLanguageChange}
+                open={open}
+                handleOpen={handleOpen}
+                field='language'
+              />
+            </>
             <Button className='bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white lg:flex lg:items-center lg:gap-2 shadow-none'>
               <BsTelephone /> | <span>+123 786 192 934</span>
             </Button>
