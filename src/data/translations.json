@@ -43,15 +43,7 @@
       "title": "are you a:",
       "items": [
         {
-          "title": "Certified Kindergarten",
-          "label": "/establishment"
-        },
-        {
-          "title": "Academy",
-          "label": "/establishment"
-        },
-        {
-          "title": "Kids club",
+          "title": "Certified Kindergarten / Academy / Kids club",
           "label": "/establishment"
         },
         {
@@ -62,7 +54,8 @@
           "title": "user",
           "label": "/user"
         }
-      ]
+      ],
+      "haveAccount": "Already have an account?"
     },
     "hero": {
       "title1": "The First Platform",
@@ -280,7 +273,8 @@
           "title": "مستخدم",
           "label": "/user"
         }
-      ]
+      ],
+      "haveAccount": "لديك حساب بالفعل؟"
     },
     "hero": {
       "title1": "المنصة الأولى",
