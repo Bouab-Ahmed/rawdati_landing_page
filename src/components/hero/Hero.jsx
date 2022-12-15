@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import img from '../../assets/img/hero_image_01.png';
 import img2 from '../../assets/img/hero_rotated_image_01.png';
-import { useNavigate } from 'react-router-dom';
 import Model from '../model/Model';
 
 const Hero = () => {
@@ -27,6 +26,7 @@ const Hero = () => {
           handleLanguageChange={null}
           open={open}
           handleOpen={handleOpen}
+          field='users'
         />
       </div>
       <div className=''>
