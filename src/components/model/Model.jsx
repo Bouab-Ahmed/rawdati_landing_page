@@ -5,6 +5,8 @@ import {
   DialogBody,
   Radio,
   Button,
+  DialogFooter,
+  Typography,
 } from '@material-tailwind/react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useNavigate } from 'react-router-dom';
@@ -40,6 +42,15 @@ const Model = ({ data, handleLanguageChange, open, handleOpen, field }) => {
             ))}
           </div>
         </DialogBody>
+        {field === 'users' && (
+          <DialogFooter>
+            <button
+              className='underline cursor-pointer ml-0'
+              onClick={() => navigate('/login')}>
+              {data?.haveAccount}
+            </button>
+          </DialogFooter>
+        )}
       </Dialog>
     </Fragment>
   );
