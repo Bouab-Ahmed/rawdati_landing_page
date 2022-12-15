@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import img from '../../assets/floating_pink_shape_01.png';
 import img2 from '../../assets/floating_pink_shape_02.png';
-const Login = ({ data }) => {
-  const navigate = useNavigate();
+import Model from '../model/Model';
+const Login = ({ data, usersData }) => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
   return (
     <section className='w-full flex flex-col justify-center items-center'>
       <h1 className='text-4xl font-paytoneOne font-semibold my-4 flex gap-4 items-end'>
@@ -17,10 +19,17 @@ const Login = ({ data }) => {
         {data?.text2}
       </p>
       <button
-        onClick={() => navigate(`${data?.button?.url}`)}
+        onClick={handleOpen}
         className='bg-[#37AC94] px-4 py-2 rounded-full rounded-tl-none text-white lg:flex lg:items-center lg:gap-2 animation my-2 text-lg mb-10'>
         {data?.button?.title}
       </button>
+      <Model
+        data={usersData}
+        handleLanguageChange={null}
+        open={open}
+        handleOpen={handleOpen}
+        field='users'
+      />
     </section>
   );
 };
