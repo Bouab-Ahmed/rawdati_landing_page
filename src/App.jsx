@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import { useLanguage } from './context/LanguageContext';
 import Navbar from './components/navbar/Navbar';
-import Hero from './components/hero/Hero';
-import Announcements from './components/announcements/Announcements';
-import Section from './components/section/Section';
-import Login from './components/login/Login';
 import Footer from './components/footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import LoginForm from './components/forms/loginForm/LoginForm';
+import LandingPage from './pages/landing/LandingPage';
+import Register from './pages/register/Register';
 
 const App = () => {
   const { language, data } = useLanguage();
@@ -16,27 +16,12 @@ const App = () => {
       <nav className='app-header'>
         <Navbar />
       </nav>
-      <header>
-        <Hero />
-      </header>
-      <main>
-        <section>
-          <Announcements />
-        </section>
-        {/* nurseries */}
-        <Section
-          data={data?.nurseries}
-          imgFirst={true}
-          sectionTitle='nurseries'
-        />
-        {/* jobs */}
-        <Section data={data?.jobs} sectionTitle='jobs' />
-        {/* store */}
-        <Section data={data?.store} imgFirst={true} sectionTitle='store' />
-        <Section data={data?.consultation} sectionTitle='consultation' />
-        <Login data={data?.login} />
-        <Footer data={data?.footer} language={language} />
-      </main>
+      <Routes>
+        <Route path='/' element={<LandingPage data={data} />} />
+        <Route path='/register/:name' element={<Register />} />
+        <Route path='/login' element={<LoginForm />} />
+      </Routes>
+      <Footer data={data?.footer} language={language} />
     </div>
   );
 };
