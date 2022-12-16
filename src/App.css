@@ -4,7 +4,8 @@
 * {
   @apply m-0 p-0 box-border scroll-smooth;
 }
-.app {
+
+.landing_page {
   @apply min-w-full bg-[url('./assets/img/header_bg.jpg')] bg-cover bg-right-bottom h-full;
 }
 .animation {
@@ -51,6 +52,9 @@ a {
 }
 .hero_location {
   @apply text-base font-normal font-poppins leading-8;
+}
+.share_icon {
+  @apply h-8 w-8 rounded-full bg-gray-900 text-white flex items-center justify-center cursor-pointer;
 }
 @tailwind utilities;
 
