@@ -663,6 +663,37 @@ export const posts = [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nm8_JC0gHglGu70bS0gbnYQ5JOhL4sdeJA&usqp=CAU',
   },
 ];
+export const welcomeData = {
+  en: {
+    title: 'Welcome to Rawdati dz',
+    subTitle:
+      'The best place to find the best kindergartens and much more for your kids',
+    text: "we'll verify your account and send you an email when it's done",
+    button: 'go back to home',
+  },
+  ar: {
+    title: 'مرحبا بكم في روضتي ديزاد',
+    subTitle: 'أفضل مكان للعثور على أفضل الروضات والكثير لأطفالكم',
+    text: 'سنقوم بالتحقق من حسابك وسنرسل لك بريدًا إلكترونيًا عندما يتم ذلك',
+    button: 'العودة إلى الصفحة الرئيسية',
+  },
+};
+export const verification = {
+  en: {
+    verify: 'please enter the code recieved by SMS',
+    haventcode: 'didnt recieve the code?',
+    resend: 'resend code',
+    verifyButton: 'verify',
+    back: 'back',
+  },
+  ar: {
+    verify: 'الرجاء إدخال الرمز الذي تلقيته عن طريق الرسائل القصيرة',
+    haventcode: 'لم تتلق الرمز؟',
+    resend: 'إعادة إرسال الرمز',
+    verifyButton: 'تحقق',
+    back: 'عودة',
+  },
+};
 export const categories = {
   en: [
     { value: 'activities', label: 'Activities' },
