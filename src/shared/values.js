@@ -1,3 +1,4 @@
+import moment from 'moment';
 export const establishment = {
   en: {
     company: 'Company label',
@@ -551,4 +552,134 @@ export const loginForm = {
     dontHaveAccount: 'ليس لديك حساب بعد؟',
     register: 'سجل الآن',
   },
+};
+
+export const loginModel = {
+  en: {
+    create: 'Create Post',
+    username: 'User name',
+    textArea: 'what is in your mind?',
+    post: 'Post',
+    privacy: [
+      { label: 'Public', value: 'public' },
+      { label: 'Onlyme', value: 'onlyme' },
+      { label: 'kindergatens Only', value: 'kindergatens' },
+    ],
+    post: 'Post',
+  },
+  ar: {
+    create: 'إنشاء منشور',
+    username: 'اسم المستخدم',
+    textArea: 'ماذا في بالك؟',
+    post: 'نشر',
+    privacy: [
+      { label: 'عام', value: 'public' },
+      { label: 'فقط لي', value: 'onlyme' },
+      { label: 'الروضات فقط', value: 'kindergatens' },
+    ],
+    post: 'نشر',
+  },
+};
+
+export const posts = [
+  {
+    id: 1,
+    user: 'radwdati.dz',
+    comments: 4,
+    tags: ['KIDS', 'PLAY AREA', 'PLAYGROUNDS'],
+    title: 'Why are Playgrounds Important for Kids',
+    date: moment(new Date()).format('dddd, MMMM Do YYYY'),
+    content: {
+      subContent:
+        'Holistically pontificate installed base portals after maintainable products. Phosfluorescently engage worldwide methodologies with technology. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.',
+      fullContent:
+        'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.',
+    },
+    image:
+      'https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/03/post_12.jpg',
+  },
+  {
+    id: 2,
+    user: 'radwdati.dz',
+    comments: 4,
+    tags: ['ACTIVITIES', 'GAMES'],
+    title: 'Why are Playgrounds Important for Kids',
+    date: moment(new Date()).format('dddd, MMMM Do YYYY'),
+    content: {
+      subContent:
+        'Holistically pontificate installed base portals after maintainable products. Phosfluorescently engage worldwide methodologies with technology. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.',
+      fullContent:
+        'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.',
+    },
+    image:
+      'https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2022/03/post_11-1280x640.jpg',
+  },
+  {
+    id: 3,
+    user: 'radwdati.dz',
+    comments: 4,
+    tags: ['GAMES', 'KIDS'],
+    title: 'Why are Playgrounds Important for Kids',
+    date: moment(new Date()).format('dddd, MMMM Do YYYY'),
+    content: {
+      subContent:
+        'Holistically pontificate installed base portals after maintainable products. Phosfluorescently engage worldwide methodologies with technology. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.',
+      fullContent:
+        'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.',
+    },
+    image:
+      'https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2018/09/post_02-1280x640.jpg',
+  },
+  {
+    id: 4,
+    user: 'radwdati.dz',
+    comments: 4,
+    tags: ['KIDS', 'PLAY AREA'],
+    title: 'Why are Playgrounds Important for Kids',
+    date: moment(new Date()).format('dddd, MMMM Do YYYY'),
+    content: {
+      subContent:
+        'Holistically pontificate installed base portals after maintainable products. Phosfluorescently engage worldwide methodologies with technology. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.',
+      fullContent:
+        'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.',
+    },
+    image:
+      'https://bambino.bold-themes-cdn.com/demo-01/wp-content/uploads/sites/2/2018/09/post_03.jpg',
+  },
+  {
+    id: 5,
+    user: 'radwdati.dz',
+    comments: 4,
+    tags: ['KIDS', 'PLAY AREA'],
+    title: 'Why are Playgrounds Important for Kids',
+    date: moment(new Date()).format('dddd, MMMM Do YYYY'),
+    content: {
+      subContent:
+        'Holistically pontificate installed base portals after maintainable products. Phosfluorescently engage worldwide methodologies with technology. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.',
+      fullContent:
+        'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.',
+    },
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nm8_JC0gHglGu70bS0gbnYQ5JOhL4sdeJA&usqp=CAU',
+  },
+];
+export const categories = {
+  en: [
+    { value: 'activities', label: 'Activities' },
+    { value: 'games', label: 'Games' },
+    { value: 'kids', label: 'Kids' },
+    { value: 'play area', label: 'Play Area' },
+    { value: 'playgrounds', label: 'Playgrounds' },
+    { value: 'toys', label: 'Toys' },
+    { value: 'toys for kids', label: 'Toys for Kids' },
+  ],
+  ar: [
+    { value: 'activities', label: 'الأنشطة' },
+    { value: 'games', label: 'الألعاب' },
+    { value: 'kids', label: 'الأطفال' },
+    { value: 'play area', label: 'منطقة اللعب' },
+    { value: 'playgrounds', label: 'ملاعب اللعب' },
+    { value: 'toys', label: 'اللعب' },
+    { value: 'toys for kids', label: 'لعب للأطفال' },
+  ],
 };
