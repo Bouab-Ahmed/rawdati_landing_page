@@ -119,6 +119,7 @@ const RegisterVendor = () => {
         </div>
         <div className='w-full flex items-center justify-center'>
           <button
+            onClick={() => navigate('/verification')}
             className={`bg-[#37AC94] px-4 py-2 rounded-full ${
               language === 'english' ? 'rounded-tl-none' : 'rounded-tr-none'
             } text-white animation mt-6 text-lg font-normal w-1/3`}>

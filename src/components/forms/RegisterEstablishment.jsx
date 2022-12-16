@@ -6,8 +6,10 @@ import Select from 'react-select';
 
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterEstablishment = () => {
+  const navigate = useNavigate();
   const { language } = useLanguage();
   const lang = language === 'arabic' ? establishment.ar : establishment.en;
   const settings = {
@@ -137,6 +139,7 @@ const RegisterEstablishment = () => {
         </div>
         <div className='w-full flex items-center justify-center'>
           <button
+            onClick={() => navigate('/verification')}
             className={`bg-[#37AC94] px-4 py-2 rounded-full ${
               language === 'english' ? 'rounded-tl-none' : 'rounded-tr-none'
             } text-white animation mt-6 text-lg font-normal w-1/3`}>
