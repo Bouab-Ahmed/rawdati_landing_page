@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-Test.jsx
+Welcome.jsx
 
 # Editor directories and files
 .vscode/*
