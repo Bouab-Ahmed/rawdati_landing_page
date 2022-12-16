@@ -6,7 +6,7 @@ import Login from '../../components/login/Login';
 
 const LandingPage = ({ data }) => {
   return (
-    <>
+    <div className='landing_page'>
       <header>
         <Hero />
       </header>
@@ -27,7 +27,7 @@ const LandingPage = ({ data }) => {
         <Section data={data?.consultation} sectionTitle='consultation' />
         <Login data={data?.login} usersData={data?.users} />
       </main>
-    </>
+    </div>
   );
 };
 
