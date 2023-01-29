@@ -128,17 +128,6 @@ const NavBar = () => {
       </div>
       <MobileNav open={openNav}>
         <NavItems items={data?.navbar} />
-        {/* <Select
-          className='w-[50%] my-4 mx-auto sm:basic-single'
-          classNamePrefix='select'
-          value={selectedValue}
-          onChange={handleLanguageChange}
-          isRtl={language === 'arabic' ? true : false}
-          isSearchable={true}
-          name='language'
-          options={data?.languages}
-          styles={customStyles}
-        /> */}
         <Model />
         <Button
           variant='gradient'
