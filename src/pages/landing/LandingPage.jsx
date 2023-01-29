@@ -3,8 +3,11 @@ import Hero from '../../components/hero/Hero';
 import Announcements from '../../components/announcements/Announcements';
 import Section from '../../components/section/Section';
 import Login from '../../components/login/Login';
+import { useLanguage } from '../../context/LanguageContext';
 
 const LandingPage = ({ data }) => {
+  const { language } = useLanguage();
+  console.log(data);
   return (
     <div className='landing_page'>
       <header>
