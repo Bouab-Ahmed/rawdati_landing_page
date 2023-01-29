@@ -7,9 +7,15 @@ const Posts = () => {
     <div className='flex flex-col font-poppins'>
       <div className='flex flex-col items-center justify-center w-full pt-10 px-4 '>
         <AddPost />
-        {posts.map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+        {posts.map((post, i) => {
+          return (
+            i > 0 && (
+              <div key={i} className='w-full mt-8'>
+                <PostCard post={post} />
+              </div>
+            )
+          );
+        })}
       </div>
     </div>
   );
