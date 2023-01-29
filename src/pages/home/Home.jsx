@@ -6,6 +6,7 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const Home = () => {
   const { language } = useLanguage();
+  console.log(language);
   return (
     <div>
       <div className='flex flex-col lg:flex-row mt-16'>
