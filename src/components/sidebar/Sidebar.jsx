@@ -3,7 +3,10 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { posts, categories } from '../../shared/values';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext';
 const Sidebar = () => {
+  const { language } = useLanguage();
+  const lang = language === 'english' ? categories.en : categories.ar;
   const navigate = useNavigate();
   return (
     <div className='flex flex-col items-center justify-top w-full mx-4'>
@@ -19,41 +22,54 @@ const Sidebar = () => {
       </div>
       <div>
         <h1 className='font-noraml font-paytoneOne text-2xl mt-10 mb-4'>
-          Recent Posts
+          {language === 'english' ? posts[0].en : posts[0].ar}
         </h1>
         <div className='flex flex-col gap-4'>
-          {posts.map((post) => (
-            <div
-              key={post.id}
-              onClick={() => navigate(`/post/${post.id}`)}
-              className='flex flex-col justify-start gap-2 border-b-2 border-gray-200 rounded-lg py-4 cursor-pointer w-full'>
-              <div className='flex gap-2'>
-                <Avatar src={post.image} alt='' variant='rounded' size='lg' />
-                <div className='flex items-center gap-2'>
-                  <div key={post.id}>
-                    <span className='text-sm text-[#37AC94] flex items-center font-poppins'>
-                      {post.date}
-                    </span>
-                    <h1 className='font-extrabold font-poppins my-1 hover:text-[#37AC94] hover:transition-all hover:delay-75'>
-                      {post.title}
-                    </h1>
+          {posts.map((post, i) => {
+            return (
+              i > 0 && (
+                <div
+                  key={post.id}
+                  onClick={() => navigate(`/post/${post.id}`)}
+                  className='flex flex-col justify-start gap-2 border-b-2 border-gray-200 rounded-lg py-4 cursor-pointer w-full'>
+                  <div className='flex gap-2'>
+                    <Avatar
+                      src={post.image}
+                      alt=''
+                      variant='rounded'
+                      size='lg'
+                    />
+                    <div className='flex items-center gap-2'>
+                      <div key={post.id}>
+                        <span className='text-sm text-[#37AC94] flex items-center font-poppins'>
+                          {post.date}
+                        </span>
+                        <h1 className='font-extrabold font-poppins my-1 hover:text-[#37AC94] hover:transition-all hover:delay-75'>
+                          {post.title}
+                        </h1>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              )
+            );
+          })}
         </div>
         <div className='flex flex-col gap-4'>
           <h1 className='font-normal font-paytoneOne text-2xl mt-10 mb-4'>
-            Categories
+            {lang[0]}
           </h1>
-          {categories.en.map((ctrg, i) => (
-            <div
-              key={i}
-              className='flex flex-col justify-start gap-2 border-b-2 border-gray-200 rounded-lg py-4 cursor-pointer w-full'>
-              {ctrg.label}
-            </div>
-          ))}
+          {lang.map((ctrg, i) => {
+            return (
+              i > 0 && (
+                <div
+                  key={i}
+                  className='flex flex-col justify-start gap-2 border-b-2 border-gray-200 rounded-lg py-4 cursor-pointer w-full'>
+                  {ctrg.label}
+                </div>
+              )
+            );
+          })}
         </div>
       </div>
     </div>
